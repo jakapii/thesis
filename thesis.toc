@@ -1,0 +1,30 @@
+\select@language {slovene}
+\contentsline {chapter}{Seznam slik}{11}{section*.2}
+\contentsline {chapter}{Seznam tabel}{13}{section*.4}
+\contentsline {chapter}{\numberline {1}Uvod}{15}{chapter.1}
+\contentsline {chapter}{\numberline {2}Teoreti\IeC {\v c}ni uvod}{17}{chapter.2}
+\contentsline {section}{\numberline {2.1}Opis elektromagnetnega valovanja}{17}{section.2.1}
+\contentsline {section}{\numberline {2.2}Ravni valovi in tenzor dielektri\IeC {\v c}ne permitivnosti}{18}{section.2.2}
+\contentsline {section}{\numberline {2.3}Svetlobni snopi}{20}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Vektorski snopi svetlobe}{22}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Teko\IeC {\v c}i kristali}{23}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Nematiki}{24}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Prosta energija nematikov}{25}{subsection.2.4.2}
+\contentsline {subsubsection}{Defekti}{29}{section*.14}
+\contentsline {subsection}{\numberline {2.4.3}\IeC {\v S}irjenje svetlobe v nematikih}{29}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Holesteriki in modre faze}{30}{subsection.2.4.4}
+\contentsline {chapter}{\numberline {3}Ra\IeC {\v c}unska metoda}{35}{chapter.3}
+\contentsline {section}{\numberline {3.1}Metoda kon\IeC {\v c}nih diferenc v \IeC {\v c}asovni domeni}{36}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Yeejev algoritem}{37}{subsection.3.1.1}
+\contentsline {subsubsection}{Anizotropni materiali}{39}{section*.19}
+\contentsline {subsection}{\numberline {3.1.2}Izvori valovanja in robni pogoji}{40}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Stabilnost}{41}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Na\IeC {\v s}a implementacija}{42}{subsection.3.1.4}
+\contentsline {chapter}{\numberline {4}Rezultati}{45}{chapter.4}
+\contentsline {section}{\numberline {4.1}Le\IeC {\v c}enje na DTC nematskem profilu}{45}{section.4.1}
+\contentsline {section}{\numberline {4.2}Vodenje svetlobe}{46}{section.4.2}
+\contentsline {section}{\numberline {4.3}Vodenje svetlobe v modrih fazah}{46}{section.4.3}
+\contentsline {chapter}{\numberline {5}Zaklju\IeC {\v c}ek}{47}{chapter.5}
+\contentsline {chapter}{Literatura}{49}{section*.23}
+\contentsline {chapter}{Dodatek \numberline {A}Dodatek 1}{53}{Dodatek.1.A}
+\contentsline {section}{\numberline {A.1}Izra\IeC {\v c}un odvodov na na\IeC {\v s}i mre\IeC {\v z}i}{53}{section.1.A.1}

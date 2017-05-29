@@ -1,0 +1,172 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5719,        164]
+NotebookOptionsPosition[      5034,        139]
+NotebookOutlinePosition[      5387,        155]
+CellTagsIndexPosition[      5344,        152]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Blue", ",", 
+       RowBox[{"Opacity", "[", "0.4", "]"}], ",", 
+       RowBox[{"Ellipsoid", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"2.5", ",", "1", ",", "1"}], "}"}]}], "]"}]}], "}"}], ",", 
+     " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"EdgeForm", "[", 
+        RowBox[{"Directive", "[", 
+         RowBox[{"Thick", ",", " ", "Black"}], "]"}], "]"}], ",", "Red", ",", 
+       
+       RowBox[{"InfinitePlane", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1", ",", "1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}], 
+      "}"}]}], "}"}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.704624242948083*^9, 3.704624303607684*^9}, {
+  3.704624351250065*^9, 3.704624457164214*^9}, {3.704624563004237*^9, 
+  3.7046246306273212`*^9}, {3.704624707664904*^9, 3.704624728311275*^9}, {
+  3.704624769151711*^9, 3.7046248726436357`*^9}, {3.704624959601811*^9, 
+  3.704625066654039*^9}},ExpressionUUID->"a9bdecf4-7cff-496b-975c-\
+d3a09e1ed465"],
+
+Cell[BoxData[
+ Graphics3DBox[{{{
+     {RGBColor[0, 0, 1], Opacity[0.4], 
+      InterpretationBox[
+       GeometricTransformation3DBox[
+        SphereBox[{0, 0, 0}], {{{2.5, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {0, 0, 
+         0}}],
+       Ellipsoid[{0, 0, 0}, {2.5, 1, 1}]]}}}, {{
+     {RGBColor[1, 0, 0], EdgeForm[{GrayLevel[0], Thickness[Large]}], 
+      TagBox[ConicHullRegion3DBox[{0, 0, 0}, {{1, 1, 1}, {0, 0, 1}}],
+       "InfinitePlane"]}}}},
+  Boxed->True,
+  ImageSize->{558.727602634602, 610.},
+  ViewPoint->{0.21301660156290372`, -1.600048875085489, 2.973964950162705},
+  ViewVertical->{0.46123183077325425`, -0.44931486811359883`, 
+   0.7651021811324363}]], "Output",
+ CellChangeTimes->{{3.704624262508938*^9, 3.704624287164215*^9}, 
+   3.704624355071512*^9, {3.704624410493067*^9, 3.704624457491528*^9}, {
+   3.704624618211899*^9, 3.7046246308149757`*^9}, {3.704624714222209*^9, 
+   3.704624728637768*^9}, {3.7046247698568363`*^9, 3.7046248430517273`*^9}, 
+   3.704624873199431*^9, {3.70462496069909*^9, 3.704624982277598*^9}, {
+   3.704625037479023*^9, 
+   3.7046250669987164`*^9}},ExpressionUUID->"75295a72-49f5-4cdb-860b-\
+0dbfd7ccd2b1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{"Graphics3D", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"RGBColor", "[", 
+         RowBox[{"0", ",", "0", ",", "1"}], "]"}], ",", 
+        RowBox[{"Opacity", "[", "0.4`", "]"}], ",", 
+        RowBox[{"Ellipsoid", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"2.5`", ",", "1", ",", "1"}], "}"}]}], "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"EdgeForm", "[", 
+         RowBox[{"Directive", "[", 
+          RowBox[{
+           RowBox[{"Thickness", "[", "Large", "]"}], ",", 
+           RowBox[{"GrayLevel", "[", "0", "]"}]}], "]"}], "]"}], ",", 
+        RowBox[{"RGBColor", "[", 
+         RowBox[{"1", ",", "0", ",", "0"}], "]"}]}], "}"}]}], "}"}], ",", 
+    RowBox[{"Boxed", "\[Rule]", "False"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7046284495868998`*^9, 3.704628452537429*^9}},
+ NumberMarks->False,ExpressionUUID->"97432222-a98c-471c-86e0-51e9c2d3ee9f"],
+
+Cell[BoxData[
+ Graphics3DBox[{{
+    {RGBColor[0, 0, 1], Opacity[0.4], 
+     InterpretationBox[
+      GeometricTransformation3DBox[
+       SphereBox[{0, 0, 0}], {{{2.5, 0, 0}, {0, 1, 0}, {0, 0, 1}}, {0, 0, 0}}],
+      Ellipsoid[{0, 0, 0}, {2.5, 1, 1}]]}}, {
+    {RGBColor[1, 0, 0], EdgeForm[{GrayLevel[0], Thickness[Large]}]}}},
+  Boxed->False,
+  ImageSize->{222.46945207718755`, 441.88871649278553`},
+  ViewPoint->{-0.15918645623442174`, -0.36828695869572947`, 
+   3.3599143423912134`},
+  ViewVertical->{0.7779161773464549, -0.18423681111355092`, 
+   1.5600791418458395`}]], "Output",
+ CellChangeTimes->{3.704625056317734*^9, 
+  3.704628453171674*^9},ExpressionUUID->"ee3b0a73-34ec-454b-bd42-\
+9651a3ea6d0b"]
+}, Open  ]]
+},
+WindowSize->{947, 685},
+WindowMargins->{{4, Automatic}, {0, Automatic}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1434, 38, 75, "Input", "ExpressionUUID" -> \
+"a9bdecf4-7cff-496b-975c-d3a09e1ed465"],
+Cell[2017, 62, 1146, 23, 625, "Output", "ExpressionUUID" -> \
+"75295a72-49f5-4cdb-860b-0dbfd7ccd2b1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3200, 90, 1107, 28, 54, "Input", "ExpressionUUID" -> \
+"97432222-a98c-471c-86e0-51e9c2d3ee9f"],
+Cell[4310, 120, 708, 16, 491, "Output", "ExpressionUUID" -> \
+"ee3b0a73-34ec-454b-bd42-9651a3ea6d0b"]
+}, Open  ]]
+}
+]
+*)
+
