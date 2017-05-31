@@ -189,7 +189,7 @@ Veliko raziskav na področju fotonike in optike je usmerjene tudi v materiale z 
 
 Tehnološko čedalje bolj zanimiva stvar na področju fotonike pa so tudi \emph{fotonska vezja}. Sestavlja jih serija optičnih vlaken prepletenih z optičnimi ter občasno tudi elektronskimi elementi s katerimi izvajamo logične operacije\cite{siliconphotonics}. Zaradi potencialno hitrejšega pretoka informacij v in med vezji računalniški velikani kot sta IBM ter Intel veliko vlagata v raziskave teh vezij na osnovi siliciija\cite{siliconphotonicsintel}. K razvoju teh vezij je pripomogel razvoj različnih optičnih elementov, ki jih sicer poznamo iz elektronskih vezij kot so fotonska stikala\cite{bose}, logična vrata\cite{espinosa} ter optični tranzistorji\cite{chen}.\\
 
-Tekoči kristali so že desetletja osnova za delovanje zaslonov raznovrstnih elektronskih naprav, osnovanih na principu preurejanja tekočega kristala ob odzivu na zunanje električno polje, ki pomeni spremembo optičnih lastnosti prepuščene svetlobe.
+Tekoči kristali so že desetletja osnova za delovanje zaslonov raznovrstnih elektronskih naprav, osnovanih na principu preurejanja tekočega kristala ob odzivu na zunanje električno polje, ki pomeni spremembo optičnih lastnosti prepuščene svetlobe\cite{yeh}. V fiziki tekočih kristalov pa se zadnja leta pozornost vse bolj usmerja k uporabi tekočih kristalov v fotoniki in fotonskih vezjih\cite{musevic}. Zanimivo področje so tekočekristalni laserji, ki temeljijo na osnovi periodičnosti tekočega kristala in obstoju vrzeli, prepovedanega pasu v kiralnih tekočih kristalih, ki preprečuje širjenje svetlobe določenih valovnih dolžin\cite{coles2}. 
 
 %%%%-------------------TEORIJA-------------------------%%%%%
 \chapter{Teoretični uvod}
@@ -912,7 +912,9 @@ Rezultat simulacije sta seveda polji $\mathbf{E}$ in $\mathbf{H}$ v celotni mre�
 
 \chapter{Rezultati}
 
-Osnovni namen tega magistrskega dela je pokazati, da se lahko nematski profil dvojno zvitega cilindra v posebnem primeru, ko nanj vpada azimutalno polarizirana svetloba, obnaša kot leča ali pa kot valovni vodnik. V nadaljevanju bomo predstavili rezultate numeričnih simulacij, opravljenih z metodo FDTD, ki to potrjujejo. 
+Osnovni namen tega magistrskega dela je pokazati, da se lahko nematski profil dvojno zvitega cilindra v posebnem primeru, ko nanj vpada azimutalno polarizirana svetloba, obnaša kot leča ali pa kot valovni vodnik. V nadaljevanju bomo predstavili rezultate numeričnih simulacij, opravljenih z metodo FDTD, ki to potrjujejo. \\
+
+To ni prvi primer nematskega profila za katerega je bilo pokazano, da vodi do lečenja in vodenja svetlobe. Podobno se zgodi za radialno polariziran snop, ki vpade na pobegli (\emph{escaped}) nematski profil\cite{cancula,cancula3}.
 
 \section{Lečenje na DTC nematskem profilu}
 
@@ -925,7 +927,7 @@ To je prikazano na Sliki \ref{fig:indexellipsoid}, kjer je označena optična os
 \begin{equation}
 \theta(r) = \frac{\pi}{2} (1-q_0\frac{r}{R}),
 \end{equation}
-kjer je $R$ radij nematskega profila, $q_0$ pa kiralnost, ki določa za kolikšen kot se direktor zasuka do $r = R$. Če imamo opisani profil v nematiku z negativno dvolomnostjo ko je $\Delta n < 0$ oziroma $n_e < n_o$ ima lomni količnik (\ref{dtcrefractiveindex}) obliko prikazano na Sliki \ref{fig:dtcrefractiveindex3d}. V prikazanem primeru je $n_e = 1.50$, $n_o = 1.45$ ter $\Delta n = -0.05$.\\
+kjer je $R$ radij nematskega profila, $q_0$ pa kiralnost, ki določa za kolikšen kot se direktor zasuka do $r = R$. Če imamo opisani profil v nematiku z negativno dvolomnostjo ko je $\Delta n < 0$ oziroma $n_e < n_o$ ima lomni količnik (\ref{dtcrefractiveindex}) obliko prikazano na Sliki \ref{fig:dtcrefractiveindex3d}. V prikazanem primeru je $n_e = 1.50$, $n_o = 1.45$ ter $\Delta n = -0.05$.
 
 \begin{figure}[h!]
 	\centering
@@ -934,20 +936,99 @@ kjer je $R$ radij nematskega profila, $q_0$ pa kiralnost, ki določa za kolikše
 	\phantomcaption
 	\label{fig:indexellipsoid}
 	\end{subfigure}\qquad
-	\begin{subfigure}[b]{0.6\textwidth}
-	\includegraphics[width=\textwidth]{slike/dtc_n_3D.png}
+	\begin{subfigure}[b]{0.55\textwidth}
+	\includegraphics[width=\textwidth]{slike/nematic_refractive_xyz.png}
 	\phantomcaption
 	\label{fig:dtcrefractiveindex3d}
 	\end{subfigure}
-	\caption{\emph{\textbf{a.)} Elipsoid z dolžino polosi $n_e$ ter $n_o$, kjer $n_o<n_e$, ter valovni vektor $\mathbf{k}$ svetlobe, ki predstavlja smer v kateri svetloba potuje, ter skupaj s polarizacijo določa lomni količnik. \textbf{b.)} Odvisnost lomnega količnika v preseku dvojno zvitega cilindra za negativno dvolomen nematik.}}
+	\caption{\emph{\textbf{a.)} Elipsoid z dolžinama polosi $n_e$ ter $n_o$, kjer $n_o<n_e$, ter valovni vektor $\mathbf{k}$ svetlobe, ki predstavlja smer v kateri svetloba potuje, ter skupaj s polarizacijo določa lomni količnik. \textbf{b.)} Odvisnost lomnega količnika v preseku dvojno zvitega cilindra za negativno dvolomen nematik. Prikazana je tudi ena plast DTC profila.}}
 \end{figure}
 
-Numerične simulacije lečenja z metodo FDTD so bile opravljene
+Faza, ki jo pridobi svetloba, ki se giblje skozi plast snovi debeline $d$ z lomnim količnikom $n$ je enaka $\phi = nd$. Prikazani profil lomnega količnika povzroči, da azimutalno polariziran snop doživi večji fazni zamik v centru DTC profila kot na robovih, kjer je lomni količnik manjši! To je čisto analogno  situaciji ob vpadu svetlobe na običajno zbiralno lečo. Zbiralna steklena leča s konstantnim lomnim količnikom $n_{stekla} = 1.458$ je oblikovana tako, da je debelejša na sredini in tanjša ob robovih, kar pomeni, da bo fazni zamik ob osi leče kot proč od nje. Enačba, ki opisuje fazni zamik v bikonveksnih lečah v približku tanke leče je
+\begin{equation}
+\Delta \phi = \frac{2\pi}{\lambda} \frac{r^2}{2f},
+\end{equation}
+kjer je $f$ goriščna razdalja leče (določena s krivinskima radijema obeh površin), $r$ razdalja od osi leče, $\lambda$ pa valovna dolžina vpadne svetlobe. Fazna zamika v obeh primerih lahko primerjamo, kar je prikazano na Sliki \ref{fig:phaseshiftcomp} za primer $d = 15$ $\mu$m ter $f = 20$ $\mu$m.\\
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{0.7\textwidth}
+	\includegraphics[width=\textwidth]{slike/phase_shift_comparisson.png}
+	\end{subfigure}
+	\label{fig:phaseshiftcomp}
+	\caption{\emph{Primerjava faznega zamika, ki ga povzroči običajna steklena leča v primerjavi z zamikom, ki ga na azimutalno polariziranem snopu, povzroči DTC profil debeline $d$.}}
+\end{figure}
+
+Začetne numerične simulacije lečenja z metodo FDTD so bile opravljene z lastnostmi simulacijske celice in parametri žarka ter nematskega profila predstavljenimi v Tabeli \ref{lensingparameters1}.
+\begin{table}[h!]
+\centering
+\caption{\emph{Lastnosti celice, žarka ter nematskega profila uporabljene v osnovnih simulacijah lečenja na DTC nematskem profilu.}}
+\label{lensingparameters1}
+\begin{tabular}{ll}
+\hline
+\multicolumn{1}{|l|}{velikost celice}  & \multicolumn{1}{l|}{$240 \times 240 \times 1000$} \\ \hline
+\multicolumn{1}{|l|}{resolucija}       & \multicolumn{1}{l|}{30 nm/vox}        \\ \hline
+\multicolumn{1}{|l|}{debelina DTC} & \multicolumn{1}{l|}{250 vox}          \\ \hline
+\multicolumn{1}{|l|}{radij DTC}    & \multicolumn{1}{l|}{110 vox}          \\ \hline                     
+\end{tabular}\quad
+\begin{tabular}{ll}
+\hline
+\multicolumn{1}{|l|}{kiralnost, $q_0$}    & \multicolumn{1}{l|}{1.0}          \\ \hline   
+\multicolumn{1}{|l|}{$n_o$, $n_e$}  & \multicolumn{1}{l|}{1.45, 1.50} \\ \hline
+\multicolumn{1}{|l|}{vpadna polarizacija}       & \multicolumn{1}{l|}{azimutalna}        \\ \hline
+\multicolumn{1}{|l|}{valovna dolžina, $\lambda$} & \multicolumn{1}{l|}{400 nm}          \\ \hline                  
+\end{tabular}
+\end{table}
+
+Celica je oblike poldogovatega kvadra in daljše stranice ustrezajo smeri osi cilindra ter smeri propagacije svetlobe. Parameter, ki se je spreminjal v teh začetnih simulacijah je bila vstopna širina žarka $w_0$.  Vstopni žarek je imel v vseh primerih Laguerre-Gaussov amplitudni profil (enačba \ref{laguerregaussianamplitude}), reda ($p=0$, $\ell = 1$) in tak, da je imel grlo na mestu vstopa v simulacijsko celico torej tudi na mestu, kjer se je začel nematski DTC profil. Kako močan je fazni zamik določa debelina profila $d$ ter dvolomnost molekul $\Delta n$. Po propagaciji skozi DTC profil preide svetloba v območje, kjer je definiran uniformen nematski profil z usmerjenostjo v smeri osi $z$. Rezultati opisanih simulacij so prikazani na Sliki \ref{fig:lensingresults1}.
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{1\textwidth}
+	\includegraphics[width=\textwidth]{slike/lensing_31_5.png}
+	\end{subfigure}
+	\caption{\emph{Simulacije lečenja svetlobe na DTC nematskem profilu debeilne $ d = 7.5$ $\mu$m za različne vstopne širine snopa $w_0$. Prikazani so $yz$ prerezi v sredini snopa, svetloba pa na vseh slikah potuje v desno, v smeri osi $z$.}}
+	\label{fig:lensingresults1}
+\end{figure}
+
+Vidimo, da postaja lečenje vse močnejše s širino vpadnega snopa, kajti ta vse bolj vpada na območje DTC profila kjer se $n$ najbolj hitro spreminja zato različni deli žarka pridobijo večjo medsebojno fazno razliko. Zanimivo si je ogledati tudi kakšna je širina žarkov vzdolž osi $z$ za različne vstopne širine, kar iz zgornje slike ne opazimo zlahka. Iz takšnih profilov lahko izloščimo tudi položaj in širino grla snopa po prehodu skozi DTC lečo. Za tri različne vstopne širine $w_0$, je to prikazano na Sliki \ref{fig:widthprofiles1} za dve različni debelini leč $d$. 
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{0.6\textwidth}
+	\includegraphics[width=\textwidth]{slike/width_profiles_2.png}
+	\end{subfigure}
+	\label{fig:widthprofiles1}
+	\caption{\emph{Profili širine treh snopov z različno vstopno širino vzdolž osi $z$. Položaja, kjer se končata DTC nematska profila debelin $d = 3.75$ $\mu$m ter $d = 7.5$ $\mu$m sta označena z zeleno in rdečo navpično črtkano črto.}}
+\end{figure}
+Opazimo, da se lečenje prične že znotraj nematskega profila za večje vstopne širine pa se grlo snopa oddaljuje od leče in postaja ožje.\\
+
+Radialno polariziran snop še na gornjo sliko!\\
+
+\subsection{Cilindrično lečenje}
+
+Spremembe polarizacije, simulacije 14.3!
 
 \section{Vodenje svetlobe}
 
+Opisano lečenje na DTC nematskem profilu je moč razširiti na vodenje svetlobe, ki ga poznamo v optičnih vlaknih. Še več, ker radialno polarizirana svetloba ne občuti spreminjanja lomnega količnika je ni moč voditi po DTC proflu, kar pomeni, da lahko takšen profil deluje kot polarizacijsko občutljivi valovni vodnik, ki deluje le za pravilno izbrano vstopno polarizacijo.
+
+\subsection{Vodenje svetlobe v zakrivljenem profilu}
+
+Zanimalo nas je tudi, če je mogoče tak profil zakriviti, vsaj v eni dimenziji in kakšne posledice ima to za izgube v valovnem vodniku. Takšen profil smo modelirali kot del krožnice s krivinskim radijem $R_k$. Direktor v središču zakrivljenega dvojno-zvitega cilindra seveda sledi zakrivljenosti osi.
+
 \section{Vodenje svetlobe v modrih fazah}
 
+Kot omenjeno v poglavju o modrih fazah, so dvojno-zviti cilindri gradniki v modrih fazah naloženi v pravilno preprosto kubično ali ploskovno centrirano kubično rešetko. Osnovni celici modrih faz tipa 1 in 2 (BP| in BP ||) sta prikazana na Slikah \ref{fig:bp1} ter \ref{fig:bp2}. Iz numeričnih izračunov tenzorja ureditvenega parametra osnovnih celic v modrih fazah, opravljenih z metodo opisano v \cite{ravnik,ravnik3}, smo lahko prišli do direktorskega profila v eni osnovni celici. Za prikaz smo vzeli osnovno celico BP2 in sestavili več takšnih celic skupaj tako, da smo sestavili daljši dvojno-zviti cilinder, ki je sedaj del modrih faz. Tak direktorski profil ni več čisti DTC profil, ki smo ga opisovali do sedaj, saj se periodično srečuje z ostalimi cilindri, kar povzroči lokalno spreminjanje direktorja na robu. To ima posledice za lomni količnik za azimutalno polarizirano vpadno svetlobo, za katero se sedaj vzdolž osi $z$ poravnane z osjo sestavljenega cilindra, ta vzdolž osi $z$ spreminja, kot je prikazano na Sliki \ref{fig:bluephaseindex}.
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{0.9\textwidth}
+	\includegraphics[width=\textwidth]{slike/bp_n.png}
+	\end{subfigure}
+	\label{fig:bluephaseindex}
+	\caption{\emph{Spreminjanje profila lomnega količnika vzdolž osnovne celice v $z$ smeri. S črno črto na sredini, je označeno mesto, kjer smo združili dve osnovni celici BPII.}}
+\end{figure}
+ 
 %%%%-------------------ZAKLJUČEK-------------------------%%%%%
 \chapter{Zaključek}
 
@@ -1033,6 +1114,16 @@ Numerične simulacije lečenja z metodo FDTD so bile opravljene
 	I. Muševič,
 	\emph{Liquid-crystal micro-photonics},
 	Liq. Crys. Rev., (\textbf{4}), 1-34, 2016.
+
+\bibitem{yeh}
+	P. Yeh, C. Gu, 
+	\emph{Optics of liquid crystal displays},
+	Wiley, 2010.
+
+\bibitem{coles2}
+	H. Coles, S. Morris,
+	\emph{Liquid-crystal lasers},
+	Nat. Phot, (\textbf{4}), 676-685, 2010.
 
 \bibitem{cancula}
 	M. Čančula.
@@ -1223,6 +1314,13 @@ Numerične simulacije lečenja z metodo FDTD so bile opravljene
 \bibitem{beerlambert}
 	Wikipedia, \emph{Beer-Lambert law},
 	\url{https://en.wikipedia.org/wiki/Beer–Lambert_law}, 20.4.2017.
+
+%-----REZULTATI-----%
+
+\bibitem{cancula3}
+	M. Čančula, M. Ravnik, I. Muševič, S. Žumer,
+	\emph{Liquid microlenses and waveguides from bulk nematic birefringent profiles},
+	Opt. Express, (\textbf{24}), 22177-22188, 2016.
 
 
 \end{thebibliography}

@@ -22,9 +22,11 @@
 \contentsline {subsection}{\numberline {3.1.4}Na\IeC {\v s}a implementacija}{42}{subsection.3.1.4}
 \contentsline {chapter}{\numberline {4}Rezultati}{45}{chapter.4}
 \contentsline {section}{\numberline {4.1}Le\IeC {\v c}enje na DTC nematskem profilu}{45}{section.4.1}
-\contentsline {section}{\numberline {4.2}Vodenje svetlobe}{46}{section.4.2}
-\contentsline {section}{\numberline {4.3}Vodenje svetlobe v modrih fazah}{46}{section.4.3}
-\contentsline {chapter}{\numberline {5}Zaklju\IeC {\v c}ek}{47}{chapter.5}
-\contentsline {chapter}{Literatura}{49}{section*.23}
-\contentsline {chapter}{Dodatek \numberline {A}Dodatek 1}{53}{Dodatek.1.A}
-\contentsline {section}{\numberline {A.1}Izra\IeC {\v c}un odvodov na na\IeC {\v s}i mre\IeC {\v z}i}{53}{section.1.A.1}
+\contentsline {subsection}{\numberline {4.1.1}Cilindri\IeC {\v c}no le\IeC {\v c}enje}{48}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Vodenje svetlobe}{48}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Vodenje svetlobe v zakrivljenem profilu}{48}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Vodenje svetlobe v modrih fazah}{49}{section.4.3}
+\contentsline {chapter}{\numberline {5}Zaklju\IeC {\v c}ek}{51}{chapter.5}
+\contentsline {chapter}{Literatura}{53}{section*.28}
+\contentsline {chapter}{Dodatek \numberline {A}Dodatek 1}{57}{Dodatek.1.A}
+\contentsline {section}{\numberline {A.1}Izra\IeC {\v c}un odvodov na na\IeC {\v s}i mre\IeC {\v z}i}{57}{section.1.A.1}
